@@ -66,7 +66,7 @@ The examples can be found in index.php
 
 ### Bugs:
 
-Found a bug? Please [let me know](https://github.com/lynxaegon/languageSystem//issues).
+Found a bug? Please [let me know](https://github.com/lynxaegon/languageSystem/issues).
 
 ### Author:
 Andrei Vaduva
