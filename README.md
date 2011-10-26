@@ -1,9 +1,9 @@
-### Description:
+# Description:
 This is a semi-automatic languageSystem for php. You can have how many languages you want at the same time. It's easy to translate from one language to another, and it's really easy to use.
 
-### Usage:
+# Usage:
 
-# Loading the languageSystem Class:
+### Loading the languageSystem Class:
 
 <?php
 	require_once("Language.class.php");
@@ -15,13 +15,13 @@ The __construct of Language has 2 parameters:
 * $path (required): the location of the language files
 * $render (optional, default "ini"): the type of the language files (ini or xml)
 
-# Get the list of supported languages:
+### Get the list of supported languages:
 
 <?php
 	print_r($language->getSupported());
 ?>
 
-# Load the language:
+### Load the language:
 
 <?php
 	if($language->load($_GET['language']) == NULL)
