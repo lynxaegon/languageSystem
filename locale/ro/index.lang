@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<language>
+		<button_add>Hello World</button_add>
+		<button_add2>Hello World</button_add2>
+		<buttons>
+				<button2>xx</button2>
+				<button>asdasd</button>
+				<type_class>
+						<asd> temporrary</asd>
+				</type_class>
+		</buttons>
+</language>
