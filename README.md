@@ -5,10 +5,10 @@ This is a semi-automatic languageSystem for php. You can have how many languages
 
 ### Loading the languageSystem Class:
 
-<?php
-	require_once("Language.class.php");
-	$language = new Language("locale","xml");
-?>
+	<?php
+		require_once("Language.class.php");
+		$language = new Language("locale","xml");
+	?>
 
 The __construct of Language has 2 parameters:
 
@@ -17,19 +17,19 @@ The __construct of Language has 2 parameters:
 
 ### Get the list of supported languages:
 
-<?php
-	print_r($language->getSupported());
-?>
+	<?php
+		print_r($language->getSupported());
+	?>
 
 ### Load the language:
 
-<?php
-	if($language->load($_GET['language']) == NULL)
-	{
-		echo "Language not Supported";
-		exit;
-	}
-?>
+	<?php
+		if($language->load($_GET['language']) == NULL)
+		{
+			echo "Language not Supported";
+			exit;
+		}
+	?>
 
 $language->load() has two parameters:
 
@@ -40,26 +40,26 @@ $language->load() has two parameters:
 Let's say you loaded English in xml format.
 If you have this language file:
 
-<?xml version="1.0" encoding="UTF-8"?> 
-<language>
-	<button_add>Add to cart</button_add>
-	<header>
-		<top_left>Text left</top_left>
-		<top_right>Text right</top_right>
-	</header>
-</language>
+	<?xml version="1.0" encoding="UTF-8"?> 
+	<language>
+		<button_add>Add to cart</button_add>
+		<header>
+			<top_left>Text left</top_left>
+			<top_right>Text right</top_right>
+		</header>
+	</language>
 
 You can access the texts from that file like this:
 
-echo $language->button; // This prints "Add to cart"
+	echo $language->button; // This prints "Add to cart"
 
 or
 
-echo $language->header->top_left; // This prints "Text left";
+	echo $language->header->top_left; // This prints "Text left";
 
 If you try to get a text that is not in the language file, ex:
 
-echo $language->header->top_center; // This prints "Undefined Language"
+	echo $language->header->top_center; // This prints "Undefined Language"
 
 ### Examples:
 The examples can be found in index.php
