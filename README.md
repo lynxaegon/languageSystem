@@ -3,7 +3,6 @@ Description:
 This is a semi-automatic languageSystem for php. You can have how many languages you want at the same time. It's easy to translate from one language to another, and it's really easy to use.
 
 Usage:
--
 # Loading the languageSystem Class:
 <?php
 	require_once("Language.class.php");
