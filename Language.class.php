@@ -56,7 +56,7 @@ class Language
 		$return = new langObj();
 		foreach ($array as $k => $v) {
 			if (is_array($v)) 
-				$return->$k = $this->toLangObj($v);
+				$return->$k = $this->arrayToLangObj($v);
 			else 
 				$return->$k = $v;
 		}
